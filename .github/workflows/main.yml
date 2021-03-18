@@ -9,7 +9,7 @@ jobs:
 
       - name: Install and Build 🔧
         run: |
-          apt-get install python
+          sudo apt-get install python3
           python3 build.py
 
       - name: Deploy 🚀

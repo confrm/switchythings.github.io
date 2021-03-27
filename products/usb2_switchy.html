@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<title>Switchy Things</title>
+	<meta name="description" content="...">
+    <meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, maximum-scale=5, initial-scale=1, user-scalable=0">
+	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+	<!-- up to 10% speed up for external res -->
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+	<link rel="dns-prefetch" href="https://fonts.gstatic.com/">
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	<!-- preloading icon font is helping to speed up a little bit -->
+	<link rel="preload" href="/assets/fonts/flaticon/Flaticon.woff2" as="font" type="font/woff2" crossorigin>
+
+	<link rel="stylesheet" href="/assets/css/core.min.css">
+	<link rel="stylesheet" href="/assets/css/vendor_bundle.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="/assets/images/favicon.svg">
+	<link rel="apple-touch-icon" href="demo.files/logo/icon_512x512.png">
+
+	<link rel="manifest" href="/assets/images/manifest/manifest.json">
+	<meta name="theme-color" content="#377dff">
+
+
+</head>
+
+
+<body class="header-sticky">
+
+	<div id="wrapper">
+
+
+		<!-- HEADER -->
+		<header id="header" class="shadow-xs">
+
+
+			<!-- NAVBAR -->
+			<div class="container position-relative">
+
+
+
+				<nav class="navbar navbar-expand-lg navbar-light justify-content-lg-between justify-content-md-inherit">
+
+					<div class="align-items-start">
+
+						<!-- mobile menu button : show -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMainNav"
+							aria-controls="navbarMainNav" aria-expanded="false" aria-label="Toggle navigation">
+							<svg width="25" viewBox="0 0 20 20">
+								<path
+									d="M 19.9876 1.998 L -0.0108 1.998 L -0.0108 -0.0019 L 19.9876 -0.0019 L 19.9876 1.998 Z">
+								</path>
+								<path
+									d="M 19.9876 7.9979 L -0.0108 7.9979 L -0.0108 5.9979 L 19.9876 5.9979 L 19.9876 7.9979 Z">
+								</path>
+								<path
+									d="M 19.9876 13.9977 L -0.0108 13.9977 L -0.0108 11.9978 L 19.9876 11.9978 L 19.9876 13.9977 Z">
+								</path>
+								<path
+									d="M 19.9876 19.9976 L -0.0108 19.9976 L -0.0108 17.9976 L 19.9876 17.9976 L 19.9876 19.9976 Z">
+								</path>
+							</svg>
+						</button>
+
+						<!-- 
+								Logo : height: 70px max
+							-->
+						<a class="navbar-brand" href="/index.html">
+							<img src="/assets/images/logo/logo_dark.svg" width="110" height="70" alt="...">
+						</a>
+
+					</div>
+
+
+
+
+					<!-- Menu -->
+					<!--
+
+							Dropdown Classes (should be added to primary .dropdown-menu only, dropdown childs are also affected)
+								.dropdown-menu-dark 		- dark dropdown (desktop only, will be white on mobile)
+								.dropdown-menu-hover 		- open on hover
+								.dropdown-menu-clean 		- no background color on hover
+								.dropdown-menu-invert 		- open dropdown in oposite direction (left|right, according to RTL|LTR)
+								.dropdown-menu-uppercase 	- uppercase text (font-size is scalled down to 13px)
+								.dropdown-click-ignore 		- keep dropdown open on inside click (useful on forms inside dropdown)
+
+								Repositioning long dropdown childs (Example: Pages->Account)
+									.dropdown-menu-up-n100 		- open up with top: -100px
+									.dropdown-menu-up-n100 		- open up with top: -150px
+									.dropdown-menu-up-n180 		- open up with top: -180px
+									.dropdown-menu-up-n220 		- open up with top: -220px
+									.dropdown-menu-up-n250 		- open up with top: -250px
+									.dropdown-menu-up 			- open up without negative class
+
+
+								Dropdown prefix icon (optional, if enabled in variables.scss)
+									.prefix-link-icon .prefix-icon-dot 		- link prefix
+									.prefix-link-icon .prefix-icon-line 	- link prefix
+									.prefix-link-icon .prefix-icon-ico 		- link prefix
+									.prefix-link-icon .prefix-icon-arrow 	- link prefix
+
+								.nav-link.nav-link-caret-hide 	- no dropdown icon indicator on main link
+								.nav-item.dropdown-mega 		- required ONLY on fullwidth mega menu
+
+						-->
+					<div class="collapse navbar-collapse" id="navbarMainNav">
+
+
+						<!-- MOBILE MENU NAVBAR -->
+						<div class="navbar-xs d-none">
+
+							<!-- mobile menu button : close -->
+							<button class="navbar-toggler pt-0" type="button" data-toggle="collapse"
+								data-target="#navbarMainNav" aria-controls="navbarMainNav" aria-expanded="false"
+								aria-label="Toggle navigation">
+								<svg width="20" viewBox="0 0 20 20">
+									<path
+										d="M 20.7895 0.977 L 19.3752 -0.4364 L 10.081 8.8522 L 0.7869 -0.4364 L -0.6274 0.977 L 8.6668 10.2656 L -0.6274 19.5542 L 0.7869 20.9676 L 10.081 11.679 L 19.3752 20.9676 L 20.7895 19.5542 L 11.4953 10.2656 L 20.7895 0.977 Z">
+									</path>
+								</svg>
+							</button>
+
+							<!-- 
+									Mobile Menu Logo 
+									Logo : height: 70px max
+								-->
+							<a class="navbar-brand" href="/index.html">
+								<img src="/assets/images/logo/logo_dark.svg" width="110" height="70" alt="...">
+							</a>
+
+						</div>
+						<!-- /MOBILE MENU NAVBAR -->
+
+
+
+						<!-- NAVIGATION -->
+						<ul class="navbar-nav">
+
+							<!-- mobile only image + simple search (d-block d-sm-none) -->
+							<li class="nav-item d-block d-sm-none">
+
+
+								<!-- search -->
+								<form method="get" action="#!search"
+									class="input-group-over mb-5 bg-light p-2 form-control-pill">
+									<input type="text" name="keyword" value="" placeholder="Quick search..."
+										class="form-control border-dashed">
+									<button
+										class="btn btn-primary btn-ghost fi fi-search p-0 ml-2 mr-2 w--50 h--50"></button>
+								</form>
+
+							</li>
+
+
+							<!-- home -->
+							<li class="nav-item active">
+
+								<a class="nav-link" href="/index.html">
+									Home
+								</a>
+
+							</li>
+
+
+							<!-- dropdown -->
+							<li class="nav-item dropdown">
+
+								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" id="mainNavPages">
+									Products
+								</a>
+
+								<ul class="dropdown-menu dropdown-menu-clean dropdown-menu-hover"
+									aria-labelledby="mainNavPages">
+									<li class="dropdown-item dropdown">
+										<a href="products/usb.html" class="dropdown-link" data-toggle="dropdown">USB</a>
+										<ul class="dropdown-menu dropdown-menu-hover shadow-lg b--0 m--0">
+											<li class="dropdown-item">
+												<a class="dropdown-link" href="/products/usb2_switchy.html">USB2 Switchy</a>
+											</li>
+											<li class="dropdown-item">
+												<a class="dropdown-link disabled" href="#">USB2 Switch High Current (Comming Soon)</a>
+											</li>
+											<li class="dropdown-item">
+												<a class="dropdown-link disabled" href="#">USB3 Switchy (Comming Soon)</a>
+											</li>
+										</ul>
+									</li>
+									<li class="dropdown-item dropdown">
+										<a href="#" class="dropdown-link" data-toggle="dropdown">LoRa</a>
+										<ul class="dropdown-menu dropdown-menu-hover shadow-lg b--0 m--0">
+                                            <li class="dropdown-item">
+												<a class="dropdown-link disabled" href="#">LoRa Switchy Hub (Comming Soon)</a>
+											</li>
+											<li class="dropdown-item">
+												<a class="dropdown-link disabled" href="#">LoRa Switchy (Comming Soon)</a>
+											</li>
+											<li class="dropdown-item">
+												<a class="dropdown-link disabled" href="#">LoRa Switch High Current (Comming Soon)</a>
+											</li>
+											<li class="dropdown-item">
+												<a class="dropdown-link disabled" href="#">LoRa Solar Switchy Shield (Comming Soon)</a>
+											</li>
+                                            <li class="dropdown-item">
+												<a class="dropdown-link disabled" href="#">LoRa Solar Switchy HAT (Comming Soon)</a>
+											</li>
+                                            
+										</ul>
+									</li>
+
+								</ul>
+
+							</li>
+
+
+
+
+							<!-- dropdown -->
+							<li class="nav-item dropdown">
+
+								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false" id="mainNavPages">
+									Support
+								</a>
+
+								<ul class="dropdown-menu dropdown-menu-clean dropdown-menu-hover"
+									aria-labelledby="mainNavPages">
+									<li class="dropdown-item">
+										<a href="#" class="dropdown-link">Guides</a>
+									</li>
+									<li class="dropdown-item">
+										<a href="#" class="dropdown-link">Contact Us</a>
+									</li>
+								</ul>
+
+							</li>
+
+
+							<!-- social : mobile only (d-block d-sm-none)-->
+							<li class="nav-item d-block d-sm-none text-center mb-4">
+
+								<h3 class="h6 text-muted">Follow Us</h3>
+
+								<a href="#!" class="btn btn-sm btn-facebook transition-hover-top mb-2 rounded-circle"
+									rel="noopener">
+									<i class="fi fi-social-facebook"></i>
+								</a>
+
+								<a href="#!" class="btn btn-sm btn-twitter transition-hover-top mb-2 rounded-circle"
+									rel="noopener">
+									<i class="fi fi-social-twitter"></i>
+								</a>
+
+								<a href="#!" class="btn btn-sm btn-linkedin transition-hover-top mb-2 rounded-circle"
+									rel="noopener">
+									<i class="fi fi-social-linkedin"></i>
+								</a>
+
+								<a href="#!" class="btn btn-sm btn-youtube transition-hover-top mb-2 rounded-circle"
+									rel="noopener">
+									<i class="fi fi-social-youtube"></i>
+								</a>
+
+							</li>
+
+						</ul>
+						<!-- /NAVIGATION -->
+
+
+					</div>
+
+
+				</nav>
+
+			</div>
+			<!-- /NAVBAR -->
+
+		</header>
+		<!-- /HEADER -->
+<!-- PRODUCT -->
+<section class="pt-5 pb-4">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-7 col-md-6 order-1">
+
+                <!-- 
+
+								SWIPER SLIDER 
+								w-75 w-100-xs 		= 70% width on desktop, 100% mobile
+								swiper-white 		= white buttons. (swiper-primary, swiper-danger, etc)
+
+								By default, Smarty controller will reconfigure swiper if -only- one image detected:
+									- remove arrows
+									- remove progress/bullets
+									- disable loop
+								Add .js-ignore class to skip, if for some reason is needed!
+
+							-->
+                <div class="swiper-container swiper-preloader swiper-white mx-auto" data-swiper='{
+									"slidesPerView": 1,
+									"spaceBetween": 0,
+									"autoplay": false,
+									"loop": true,
+									"zoom": true,
+									"effect": "slide",
+									"pagination": { "type": "progressbar" }
+								}'>
+
+                    <!--
+									
+									NOTE: only the first image is NOT using lazy loading (to avoid 'jumping')
+									lazy is optional but recommended: ~80% of visitors don't slide through images!
+
+									Images are using srcset for responsiveness!
+
+								-->
+                    <div class="swiper-wrapper text-center">
+
+                        <!-- slider 1 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img class="bg-suprime img-fluid rounded max-h-600" sizes="(max-width: 768px) 100vw"
+                                    srcset="
+														demo.files/images/unsplash/products/smartwatch_3.jpg 1200w,
+														demo.files/images/unsplash/products/thumb_768/smartwatch_3.jpg 768w
+												" src="demo.files/images/unsplash/products/smartwatch_3.jpg" alt="...">
+                            </div>
+                        </div>
+
+                        <!-- slider 2 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img class="lazy bg-suprime img-fluid rounded max-h-600"
+                                    sizes="(max-width: 768px) 100vw" srcset="
+														demo.files/images/unsplash/products/smartwatch_2.jpg 1200w,
+														demo.files/images/unsplash/products/thumb_768/smartwatch_2.jpg 768w
+												" data-src="demo.files/images/unsplash/products/smartwatch_2.jpg"
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="...">
+                            </div>
+                        </div>
+
+                        <!-- slider 3 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img class="lazy bg-suprime img-fluid rounded max-h-600"
+                                    sizes="(max-width: 768px) 100vw" srcset="
+														demo.files/images/unsplash/products/smartwatch_1.jpg 1200w,
+														demo.files/images/unsplash/products/thumb_768/smartwatch_1.jpg 768w
+												" data-src="demo.files/images/unsplash/products/smartwatch_1.jpg"
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left|Right Arrows -->
+                    <div class="swiper-button-next rounded-circle shadow-xs d-none d-md-block"></div>
+                    <div class="swiper-button-prev rounded-circle shadow-xs d-none d-md-block"></div>
+
+                    <!-- Progress Bar -->
+                    <div class="swiper-pagination position-relative mt-4 h--1"></div>
+
+                </div>
+                <!-- /SWIPER SLIDER -->
+
+            </div>
+
+
+            <div class="col-lg-5 col-md-6 order-2">
+
+                <div class="clearfix">
+                    <!-- sticky-kit -->
+
+                    <!-- TITLE -->
+                    <h1 class="h2 h3-xs font-weight-medium mb-5">
+                        USB2 Switchy
+                        <span class="d-block text-muted fs--14">SKU-USB2-SWITCHY</span>
+                    </h1>
+
+                    <!-- PRICE -->
+                    <div class="clearfix mb-5">
+
+                        <p class="fs--25 m-0 font-weight-medium">
+                            $<span class="item-price">12</span> <small>(excl. Taxes + P&P)</small>
+                        </p>
+
+                    </div>
+
+                    <!-- CONFIGURATOR -->
+                    <div class="clearfix">
+
+                        <h6 class="font-weight-medium">
+                            Options
+                        </h6>
+
+                        <div>
+                            <ul>
+                                <li>3D Printed Case ($3)</li>
+<li>External Temperature Sensor ($4)</li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- /CONFIGURATOR -->
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- /PRODUCT -->
+
+
+<!-- DESCRIPTION -->
+<section class="pt-2 pb-2">
+    <div class="container">
+
+        <ul class="nav nav-tabs" id="productTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="decription"
+                    aria-selected="true">
+                    Description
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="specification-tab" data-toggle="tab" href="#specification" role="tab" aria-controls="decription"
+                    aria-selected="true">
+                    Specification
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="downloads-tab" data-toggle="tab" href="#downloads" role="tab"
+                    aria-controls="downloads" aria-selected="false">
+                    Downloads
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="productTabContent">
+
+            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                <div class="p--15">
+                    <p><p>USB2 Switchy is a USB Switch which works over WiFi with full data pass-through. It can be used to control a wide variety of USB powered devices requiring up to 1.5 A at 5V.</p>
+
+<p>USB2 Switchy also provides current measurement (12-bits from 0 to 3A, ~12mA resolution) and a temperature sensor.</p>
+
+<p>The temperature sensor is the venerable DS18B20 chip from Maxim, the USB2 Switchy includes the one-wire device on board.</p>
+
+<p>For high power loads this can lead to self-heating of the module, power dissipated in the FET switch 'leaks' in the surrounding PCB. At steady state the current consumed by the load will be directly proportional to the temperature rise.</p>
+
+<p>The datasheet contains a lookup table for load current against temperature rise which is sufficient for simple applications. More complex systems may require separate calibration - or select the USB2 Switchy with external temperature sensor (coming soon!).</p>
+    </p><strong>3D Printed Case</strong><p><p>To protect the module and make it a bit more home friendly you can add-on a
+3d printed case. If you have your own 3d printer then the STL and FreeCAD files
+can be downloaded from the Downloads tab above.</p>
+</p><strong>External Temperature Sensor</strong><p><p>The external temperature sensor option uses a 3 pin terminal connection and included an external DS18B20
+sensor on 1 m of wire. This overcomes the issue of the module self-heading while under load for more precise measurements.</p>
+
+<p>The module can also be used to connect to any 1-wire device which can run on 3.3V.</p>
+</p>
+                </div>
+                
+            </div>
+
+            <div class="tab-pane fade" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+                <div class="p--15">
+                    <h3 class="h5">Base</h3><table class="table table-striped"><tbody><tr><td class="text-muted w-50">Controller</td><td>ESP-12F (ESP8266)</td></tr><tr><td class="text-muted w-50">Heigth</td><td>20 mm (PCB)</td></tr><tr><td class="text-muted w-50">Length</td><td>60 mm (PCB)</td></tr><tr><td class="text-muted w-50">Sensor</td><td>Temperature (DS18B20)</td></tr><tr><td class="text-muted w-50">Software Stack</td><td>Tasmota</td></tr><tr><td class="text-muted w-50">Weight</td><td>20 g</td></tr><tr><td class="text-muted w-50">Width</td><td>40 mm (PCB)</td></tr></table><h3 class="h5">3D Printed Case</h3><table class="table table-striped"><tbody><tr><td class="text-muted w-50">Colour</td><td>Natural</td></tr><tr><td class="text-muted w-50">Heigth</td><td>20 mm (PCB)</td></tr><tr><td class="text-muted w-50">Length</td><td>60 mm (PCB)</td></tr><tr><td class="text-muted w-50">Material</td><td>PLA</td></tr><tr><td class="text-muted w-50">Process</td><td>3D Printed (FDM)</td></tr><tr><td class="text-muted w-50">Weight</td><td>20 g</td></tr><tr><td class="text-muted w-50">Width</td><td>40 mm (PCB)</td></tr></table><h3 class="h5">External Temperature Sensor</h3><table class="table table-striped"><tbody><tr><td class="text-muted w-50">Sensor</td><td>Temperature (DS18B20 External)</td></tr></table>
+                </div>
+                
+            </div>
+
+
+            <div class="tab-pane fade" id="downloads" role="tabpanel" aria-labelledby="downloads-tab">
+                <div class="p--15">
+                    <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id
+                        magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore.
+                        Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur
+                        nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non
+                        anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim
+                        veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit
+                        dolore.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /DESCRIPTION -->
+		<!-- Footer -->
+		<footer id="footer" class="footer-dark">
+
+			<div class="bg-distinct pt--15 pb--15 clearfix">
+
+				<div class="container clearfix font-weight-light text-center-xs">
+
+					<div class="fs--14 pt--8 pb--8 float-start float-none-xs m--0-xs">
+						&copy; 2021 Switchy Things. All Rights Reserved.
+					</div>
+
+				</div>
+			</div>
+
+		</footer>
+		<!-- /Footer -->
+
+
+	</div><!-- /#wrapper -->
+
+	<script src="/assets/js/core.min.js"></script>
+
+</body>
+
+</html>

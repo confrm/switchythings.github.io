@@ -182,7 +182,7 @@
 								<ul class="dropdown-menu dropdown-menu-clean dropdown-menu-hover"
 									aria-labelledby="mainNavPages">
 									<li class="dropdown-item dropdown">
-										<a href="products/usb.html" class="dropdown-link" data-toggle="dropdown">USB</a>
+										<a href="#" class="dropdown-link" data-toggle="dropdown">USB</a>
 										<ul class="dropdown-menu dropdown-menu-hover shadow-lg b--0 m--0">
 											<li class="dropdown-item">
 												<a class="dropdown-link" href="/products/usb2_switchy.html">USB2 Switchy</a>

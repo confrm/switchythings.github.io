@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="472.50674mm"
+   height="159.28328mm"
+   viewBox="0 0 472.50674 159.28328"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
@@ -19,8 +19,8 @@
     <rect
        x="-444.07434"
        y="190.64496"
-       width="128.96784"
-       height="29.08763"
+       width="128.96783"
+       height="29.087629"
        id="rect71" />
     <rect
        x="1341.2887"
@@ -29,16 +29,16 @@
        height="14.948958"
        id="rect1206" />
     <rect
-       x="339.46041"
+       x="339.46042"
        y="172.77292"
-       width="53.379687"
-       height="18.653125"
+       width="53.379688"
+       height="18.653126"
        id="rect1200" />
     <rect
-       x="356.19344"
+       x="356.19345"
        y="83.026443"
        width="7.4835467"
-       height="61.406009"
+       height="61.40601"
        id="rect1194" />
   </defs>
   <sodipodi:namedview
@@ -49,10 +49,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="508.5234"
-     inkscape:cy="478.15415"
+     inkscape:cx="298.77466"
+     inkscape:cy="475.09642"
      inkscape:document-units="mm"
-     inkscape:current-layer="g927"
+     inkscape:current-layer="g959"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:pagecheckerboard="true"
@@ -61,7 +61,11 @@
      inkscape:window-height="836"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -78,7 +82,8 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline;opacity:0.99">
+     style="display:inline;opacity:0.99"
+     transform="translate(131.25337,-68.85836)">
     <g
        id="g67"
        transform="translate(30.232937,52.589808)">
@@ -239,14 +244,14 @@
     <text
        xml:space="preserve"
        id="text1192"
-       style="line-height:1.25;font-family:Caladea;font-size:10.58333333px;-inkscape-font-specification:Caladea;white-space:pre;shape-inside:url(#rect1194);" />
+       style="font-size:10.5833px;line-height:1.25;font-family:Caladea;-inkscape-font-specification:Caladea;white-space:pre;shape-inside:url(#rect1194);" />
     <text
        xml:space="preserve"
        id="text1198"
-       style="line-height:1.25;font-family:Caladea;font-size:10.58333333px;-inkscape-font-specification:Caladea;white-space:pre;shape-inside:url(#rect1200);" />
+       style="font-size:10.5833px;line-height:1.25;font-family:Caladea;-inkscape-font-specification:Caladea;white-space:pre;shape-inside:url(#rect1200);" />
     <text
        xml:space="preserve"
        id="text1204"
-       style="line-height:1.25;font-family:Caladea;font-size:10.58333333px;-inkscape-font-specification:Caladea;white-space:pre;shape-inside:url(#rect1206);" />
+       style="font-size:10.5833px;line-height:1.25;font-family:Caladea;-inkscape-font-specification:Caladea;white-space:pre;shape-inside:url(#rect1206);" />
   </g>
 </svg>

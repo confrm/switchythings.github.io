@@ -1,0 +1,25 @@
+		<!-- Footer -->
+		<footer id="footer" class="footer-dark">
+
+			<div class="bg-distinct pt--15 pb--15 clearfix">
+
+				<div class="container clearfix font-weight-light text-center-xs">
+
+					<div class="fs--14 pt--8 pb--8 float-start float-none-xs m--0-xs">
+						&copy; 2021 Switchy Things. All Rights Reserved.
+					</div>
+
+				</div>
+			</div>
+
+		</footer>
+		<!-- /Footer -->
+
+
+	</div><!-- /#wrapper -->
+
+	<script src="/assets/js/core.min.js"></script>
+
+</body>
+
+</html>

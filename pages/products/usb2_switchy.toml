@@ -1,0 +1,58 @@
+[template]
+name = "product"
+
+[product]
+description = '''
+<p>USB2 Switchy is a USB Switch which works over WiFi with full data pass-through. It can be used to control a wide variety of USB powered devices requiring up to 1.5 A at 5V.</p>
+
+<p>USB2 Switchy also provides current measurement (12-bits from 0 to 3A, ~12mA resolution) and a temperature sensor.</p>
+
+<p>The temperature sensor is the venerable DS18B20 chip from Maxim, the USB2 Switchy includes the one-wire device on board.</p>
+
+<p>For high power loads this can lead to self-heating of the module, power dissipated in the FET switch 'leaks' in the surrounding PCB. At steady state the current consumed by the load will be directly proportional to the temperature rise.</p>
+
+<p>The datasheet contains a lookup table for load current against temperature rise which is sufficient for simple applications. More complex systems may require separate calibration - or select the USB2 Switchy with external temperature sensor (coming soon!).</p>
+    '''
+price = 12
+sku = "SKU-USB2-SWITCHY"
+title = "USB2 Switchy"
+
+[specifications]
+Controller = "ESP-12F (ESP8266)"
+Heigth = "20 mm (PCB)"
+Length = "60 mm (PCB)"
+Sensor = "Temperature (DS18B20)"
+'Software Stack' = "Tasmota"
+Weight = "20 g"
+Width = "40 mm (PCB)"
+
+[options.CASE]
+description = '''
+<p>To protect the module and make it a bit more home friendly you can add-on a
+3d printed case. If you have your own 3d printer then the STL and FreeCAD files
+can be downloaded from the Downloads tab above.</p>
+'''
+price = 3
+title = "3D Printed Case"
+
+[options.CASE.specifications]
+Colour = "Natural"
+Heigth = "20 mm (PCB)"
+Length = "60 mm (PCB)"
+Material = "PLA"
+Process = "3D Printed (FDM)"
+Weight = "20 g"
+Width = "40 mm (PCB)"
+
+[options.EXT]
+description = '''
+<p>The external temperature sensor option uses a 3 pin terminal connection and included an external DS18B20 
+sensor on 1 m of wire. This overcomes the issue of the module self-heading while under load for more precise measurements.</p>
+
+<p>The module can also be used to connect to any 1-wire device which can run on 3.3V.</p>
+'''
+price = 4
+title = "External Temperature Sensor"
+
+[options.EXT.specifications]
+Sensor = "Temperature (DS18B20 External)"

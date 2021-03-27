@@ -1,0 +1,203 @@
+<!-- PRODUCT -->
+<section class="pt-5 pb-4">
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-7 col-md-6 order-1">
+
+                <!-- 
+
+								SWIPER SLIDER 
+								w-75 w-100-xs 		= 70% width on desktop, 100% mobile
+								swiper-white 		= white buttons. (swiper-primary, swiper-danger, etc)
+
+								By default, Smarty controller will reconfigure swiper if -only- one image detected:
+									- remove arrows
+									- remove progress/bullets
+									- disable loop
+								Add .js-ignore class to skip, if for some reason is needed!
+
+							-->
+                <div class="swiper-container swiper-preloader swiper-white mx-auto" data-swiper='{
+									"slidesPerView": 1,
+									"spaceBetween": 0,
+									"autoplay": false,
+									"loop": true,
+									"zoom": true,
+									"effect": "slide",
+									"pagination": { "type": "progressbar" }
+								}'>
+
+                    <!--
+									
+									NOTE: only the first image is NOT using lazy loading (to avoid 'jumping')
+									lazy is optional but recommended: ~80% of visitors don't slide through images!
+
+									Images are using srcset for responsiveness!
+
+								-->
+                    <div class="swiper-wrapper text-center">
+
+                        <!-- slider 1 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img class="bg-suprime img-fluid rounded max-h-600" sizes="(max-width: 768px) 100vw"
+                                    srcset="
+														demo.files/images/unsplash/products/smartwatch_3.jpg 1200w,
+														demo.files/images/unsplash/products/thumb_768/smartwatch_3.jpg 768w
+												" src="demo.files/images/unsplash/products/smartwatch_3.jpg" alt="...">
+                            </div>
+                        </div>
+
+                        <!-- slider 2 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img class="lazy bg-suprime img-fluid rounded max-h-600"
+                                    sizes="(max-width: 768px) 100vw" srcset="
+														demo.files/images/unsplash/products/smartwatch_2.jpg 1200w,
+														demo.files/images/unsplash/products/thumb_768/smartwatch_2.jpg 768w
+												" data-src="demo.files/images/unsplash/products/smartwatch_2.jpg"
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="...">
+                            </div>
+                        </div>
+
+                        <!-- slider 3 -->
+                        <div class="swiper-slide">
+                            <div class="swiper-zoom-container">
+                                <img class="lazy bg-suprime img-fluid rounded max-h-600"
+                                    sizes="(max-width: 768px) 100vw" srcset="
+														demo.files/images/unsplash/products/smartwatch_1.jpg 1200w,
+														demo.files/images/unsplash/products/thumb_768/smartwatch_1.jpg 768w
+												" data-src="demo.files/images/unsplash/products/smartwatch_1.jpg"
+                                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                    alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Left|Right Arrows -->
+                    <div class="swiper-button-next rounded-circle shadow-xs d-none d-md-block"></div>
+                    <div class="swiper-button-prev rounded-circle shadow-xs d-none d-md-block"></div>
+
+                    <!-- Progress Bar -->
+                    <div class="swiper-pagination position-relative mt-4 h--1"></div>
+
+                </div>
+                <!-- /SWIPER SLIDER -->
+
+            </div>
+
+
+            <div class="col-lg-5 col-md-6 order-2">
+
+                <div class="clearfix">
+                    <!-- sticky-kit -->
+
+                    <!-- TITLE -->
+                    <h1 class="h2 h3-xs font-weight-medium mb-5">
+                        $title
+                        <span class="d-block text-muted fs--14">$sku</span>
+                    </h1>
+
+                    <!-- PRICE -->
+                    <div class="clearfix mb-5">
+
+                        <p class="fs--25 m-0 font-weight-medium">
+                            $$<span class="item-price">$price</span> <small>(excl. Taxes + P&P)</small>
+                        </p>
+
+                    </div>
+
+                    <!-- CONFIGURATOR -->
+                    <div class="clearfix">
+
+                        <h6 class="font-weight-medium">
+                            Options
+                        </h6>
+
+                        <div>
+                            <ul>
+                                $options
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!-- /CONFIGURATOR -->
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- /PRODUCT -->
+
+
+<!-- DESCRIPTION -->
+<section class="pt-2 pb-2">
+    <div class="container">
+
+        <ul class="nav nav-tabs" id="productTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="decription"
+                    aria-selected="true">
+                    Description
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="specification-tab" data-toggle="tab" href="#specification" role="tab" aria-controls="decription"
+                    aria-selected="true">
+                    Specification
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="downloads-tab" data-toggle="tab" href="#downloads" role="tab"
+                    aria-controls="downloads" aria-selected="false">
+                    Downloads
+                </a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="productTabContent">
+
+            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                <div class="p--15">
+                    $description
+                </div>
+                
+            </div>
+
+            <div class="tab-pane fade" id="specification" role="tabpanel" aria-labelledby="specification-tab">
+                <div class="p--15">
+                    $specifications
+                </div>
+                
+            </div>
+
+
+            <div class="tab-pane fade" id="downloads" role="tabpanel" aria-labelledby="downloads-tab">
+                <div class="p--15">
+                    <p>Ex consequat commodo adipisicing exercitation aute excepteur occaecat ullamco duis aliqua id
+                        magna ullamco eu. Do aute ipsum ipsum ullamco cillum consectetur ut et aute consectetur labore.
+                        Fugiat laborum incididunt tempor eu consequat enim dolore proident. Qui laborum do non excepteur
+                        nulla magna eiusmod consectetur in. Aliqua et aliqua officia quis et incididunt voluptate non
+                        anim reprehenderit adipisicing dolore ut consequat deserunt mollit dolore. Aliquip nulla enim
+                        veniam non fugiat id cupidatat nulla elit cupidatat commodo velit ut eiusmod cupidatat elit
+                        dolore.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /DESCRIPTION -->

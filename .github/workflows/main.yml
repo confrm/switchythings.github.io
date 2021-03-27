@@ -10,6 +10,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           sudo apt-get install python3
+          pip3 install --user toml
           python3 build.py
 
       - name: Deploy 🚀

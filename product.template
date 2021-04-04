@@ -108,7 +108,10 @@
                         <p class="fs--25 m-0 font-weight-medium">
                             $$<span class="item-price">$price</span> <small>(excl. Taxes + P&P)</small>
                         </p>
+                    </div>
 
+                    <div class="clearfix mb-5">
+                        <a href="$link" class="btn btn-primary mb-1">Buy now on Tindie</a>
                     </div>
 
                     <!-- CONFIGURATOR -->

@@ -16,6 +16,7 @@ description = '''
 price = 12
 sku = "SKU-USB2-SWITCHY"
 title = "USB2 Switchy"
+link = "https://www.tindie.com/products/switchythings/usb2-switchy/"
 
 [specifications]
 Controller = "ESP-12F (ESP8266)"

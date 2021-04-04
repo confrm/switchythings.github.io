@@ -111,6 +111,7 @@ def create_product(content, path, wrapper):
         title = content['product']['title'],
         sku = content['product']['sku'],
         price = content['product']['price'],
+        link = content['product']['link'],
         description = description,
         specifications = specifications,
         options = options_list

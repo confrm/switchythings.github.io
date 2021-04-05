@@ -73,7 +73,7 @@
 								Logo : height: 70px max
 							-->
 						<a class="navbar-brand" href="/index.html">
-							<img src="/assets/images/logo/logo_dark.svg" width="110" height="27" alt="...">
+							<img src="/assets/images/logo/logo_dark.svg" width="150" height="50" alt="...">
 						</a>
 
 					</div>
@@ -133,7 +133,7 @@
 									Logo : height: 70px max
 								-->
 							<a class="navbar-brand" href="/index.html">
-								<img src="/assets/images/logo/logo_dark.svg" width="120" height="70" alt="...">
+								<img src="/assets/images/logo/logo_dark.svg" width="150" height="50" alt="SwitchyThings.com">
 							</a>
 
 						</div>
@@ -172,6 +172,8 @@
 												<a class="dropdown-link disabled" href="#">Sinilink High Current WiFi USB Switch - Tasmota Firmware (Coming Soon)</a>
 											</li>
 										</ul>
+                                    </li>
+									<li class="dropdown-item dropdown">
 										<a href="#" class="dropdown-link" data-toggle="dropdown">Relay</a>
 										<ul class="dropdown-menu dropdown-menu-hover shadow-lg b--0 m--0">
 											<li class="dropdown-item">

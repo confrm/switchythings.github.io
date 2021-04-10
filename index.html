@@ -82,35 +82,6 @@
 
 
 					<!-- Menu -->
-					<!--
-
-							Dropdown Classes (should be added to primary .dropdown-menu only, dropdown childs are also affected)
-								.dropdown-menu-dark 		- dark dropdown (desktop only, will be white on mobile)
-								.dropdown-menu-hover 		- open on hover
-								.dropdown-menu-clean 		- no background color on hover
-								.dropdown-menu-invert 		- open dropdown in oposite direction (left|right, according to RTL|LTR)
-								.dropdown-menu-uppercase 	- uppercase text (font-size is scalled down to 13px)
-								.dropdown-click-ignore 		- keep dropdown open on inside click (useful on forms inside dropdown)
-
-								Repositioning long dropdown childs (Example: Pages->Account)
-									.dropdown-menu-up-n100 		- open up with top: -100px
-									.dropdown-menu-up-n100 		- open up with top: -150px
-									.dropdown-menu-up-n180 		- open up with top: -180px
-									.dropdown-menu-up-n220 		- open up with top: -220px
-									.dropdown-menu-up-n250 		- open up with top: -250px
-									.dropdown-menu-up 			- open up without negative class
-
-
-								Dropdown prefix icon (optional, if enabled in variables.scss)
-									.prefix-link-icon .prefix-icon-dot 		- link prefix
-									.prefix-link-icon .prefix-icon-line 	- link prefix
-									.prefix-link-icon .prefix-icon-ico 		- link prefix
-									.prefix-link-icon .prefix-icon-arrow 	- link prefix
-
-								.nav-link.nav-link-caret-hide 	- no dropdown icon indicator on main link
-								.nav-item.dropdown-mega 		- required ONLY on fullwidth mega menu
-
-						-->
 					<div class="collapse navbar-collapse" id="navbarMainNav">
 
 
@@ -153,7 +124,7 @@
 
 
 							<!-- dropdown -->
-							<li class="nav-item dropdown">
+							<li class="nav-item dropdown" style="display: none">
 
 								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
 									aria-expanded="false" id="mainNavPages">
@@ -211,7 +182,7 @@
 
 
 							<!-- dropdown -->
-							<li class="nav-item dropdown">
+							<li class="nav-item dropdown" style="display: none">
 
 								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
 									aria-expanded="false" id="mainNavPages">
@@ -246,8 +217,57 @@
 		<!-- /HEADER -->
 
 
+
+
+
+			<!-- INTRO -->
+			<section class="bg-light overlay-dark overlay-opacity-7 bg-cover lazy" data-background-image="demo.files/images/unsplash/covers/reza-rostampisheh--hcCm0kIaSg-unsplash.jpg">
+				
+				<div class="container position-relative z-index-2"> 
+						
+					<div class="py-6 text-center text-white" data-aos="fade-in" data-aos-delay="0" data-aos-offset="0">
+
+						<!-- main title -->
+						<h1 class="h1-xs display-4 mb-0 font-weight-light">
+							<b class="text-success">Switchy</b> <span class="typed" 
+												data-typed-string="Home|Garden|Office"
+												data-typed-speed-forward="80" 
+												data-typed-speed-back="40" 
+												data-typed-back-delay="700" 
+												data-typed-loop-times="infinite" 
+												data-typed-smart-backspace="true" 
+												data-typed-shuffle="false" 
+												data-typed-cursor="|"></span>
+						</h1>
+						
+						<!-- slogan -->
+						<p class="h4 h5-xs font-weight-normal mb-0">
+							Launching soon on Tindie (the Things are in the post)
+						</p>
+
+						<div class="clearfix py-7">
+
+							<a href="https://www.tindie.com/stores/switchythings/" class="btn btn-lg btn-success transition-hover-top bg-gradient-success b-0 d-block-xs disabled">
+								<i class="fi fi-arrow-right"></i>
+								Tindie Store Coming Soon
+							</a>
+							
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="absolute-full w-100 overflow-hidden opacity-5 z-index-1">
+					<img class="img-fluid" width="2000" height="2000" src="assets/images/masks/shape-line-lense.svg" alt="...">
+				</div>
+
+			</section>	
+			<!-- /INTRO -->
+
+
 		<!-- COVER -->
-		<section class="p-0 bg-cover">
+		<section class="p-0 bg-cover" style="display: none">
 
 			<div class="container d-middle pt-5">
 

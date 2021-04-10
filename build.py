@@ -23,7 +23,7 @@ def main():
         os.mkdir("build")
 
     """ Copy in fixed assets """
-    fixed_assets = ["favicon.ico", "robots.txt", "CNAME", "assets"]
+    fixed_assets = ["robots.txt", "CNAME", "assets"]
     for asset in fixed_assets:
         if (os.path.isdir(asset)):
             shutil.copytree(asset, os.path.join("build", asset), False, None)

@@ -215,7 +215,101 @@
 
 		</header>
 		<!-- /HEADER -->
-		<!-- Footer -->
+<section class="py-4 mb-5">
+    <div class="container">
+
+        <div class="col-12 col-lg-10 offset-lg-1">
+
+            <div class="p-4 shadow-xs bg-white rounded">
+
+                <div class="border-bottom pb-3 mb-5">
+                    <h1 class="h2 h3-xs">
+                        Using Tasmota
+                    </h1>
+                </div>
+
+                <div class="article-format">
+
+                    <p class="lead">
+                        Tasmota (<a href="https://tasmota.github.io/docs/">https://tasmota.github.io/docs/</a>) is a
+                        open source firmware for esp8266 and esp32 devices enabling standalone control and automation
+                        or integration with a wide variety of home automation systems. WiFi based SwitchyThings use the
+                        Tasmota firmware.
+                    </p>
+
+                    <h3>1. Getting Started</h3>
+
+                    <p>
+                        From the factory all Tasmota devices create their own wifi network with the name tasmota-xx
+                        where
+                        the xx is as unique number for the device.
+                    </p>
+
+                    <p>
+                        Connect to that network using a phone or similar. The phone should tell you that you need to
+                        sign
+                        in to the network and open a browser page for you. If not navigate to xx.
+                    </p>
+
+                    <p>
+                        On this page you can set the SSID and password of the network you want the device to connect to.
+                        Enter the details and click on "Submit". The device will reboot and attempt to connect to that
+                        network. If it fails to connect it will start up the tasmota-xx wifi network to allow you to try
+                        again.
+                    </p>
+
+                    <div class="alert alert-dark" role="alert">
+                        If you ever need to reset you device holding the button for 40 seconds will make it reset. If
+                        the device does not have a button then turning off the wifi and power cycling the device will
+                        make it start the tasmota-xx hotspot again.
+                    </div>
+
+                    <p>
+                        Once the device is rebooted you will get a screen like this:
+
+                        From here you can turn the device on and off, and use the menu system to use the built in
+                        automations.
+                    </p>
+
+                    <h3>2. Integrations</h3>
+
+                    <p>
+                        The following are links to websites showing how to integrate Tasmota devices with home
+                        automation systems:
+
+                        <ul>
+                            <li>One</li>
+                            <li>Two</li>
+                        </ul>
+
+                        &nbsp;
+                    </p>
+
+
+                    <h3>3. Troubleshooting</h3>
+
+                    <p>
+                        <strong>No Internet</strong>: If you wish to use a Tasmota device on a network without an
+                        internet connection you will need to set its time manually or provide a time server on the
+                        network. To set the time manually go to the console and enter "xx":
+
+                        Note that over time the accuracy of the time on the system may drift, if you are using built
+                        in automations you may need to adjust the time every few weeks or months for it to stay
+                        accurate.
+                    </p>
+
+                    <p class="border-top py-3 m-0 text-muted fs--13">
+                        Last Update: 11 April 2021
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>		<!-- Footer -->
 		<footer id="footer" class="footer-dark">
 
 			<div class="bg-distinct pt--15 pb--15 clearfix">
